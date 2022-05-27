@@ -71,11 +71,13 @@ export default function HookExample() {
 
     return (
         <div>
-            <h2>Hooks:</h2>
-            <TaskList tasks={ tasks }/>
-            <input ref={input} placeholder="Add an item" />
-            <button type="button" onClick={handleAddTask}>Submit</button>
-            <div><button type="button" onClick={handleModifyTask}>Modify/Delete</button></div>
+            <form>
+                <h2>Hooks:</h2>
+                <TaskList tasks={ tasks }/>
+                <input ref={input} placeholder="Add an item" />
+                <button type="button" onClick={handleAddTask}>Submit</button>
+                <div><button type="button" onClick={handleModifyTask}>Modify/Delete</button></div>
+            </form>
         </div>
     )
 }
